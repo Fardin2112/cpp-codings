@@ -41,3 +41,18 @@ for(int i=1;i<=raw;i++){
 }
 	return 0;
 }
+
+Q3program to print the number which is not div by 3 from  1 to 100
+
+using namespace std;
+ 
+int main() {
+	int date;
+	for ( date=1;date<=100;date++){
+		if(date%3==0){
+			continue;
+		}
+		cout<<date<<endl;
+	}
+	return 0;
+}
