@@ -56,3 +56,50 @@ int main() {
 	}
 	return 0;
 }
+Q4  to print space * from in mid:
+#include <iostream>
+using namespace std;
+
+
+int main() {
+int raw,col;
+cin>>raw>>col;
+for(int i=1;i<=raw;i++){
+	for(int j=1;j<=col;j++){
+    if(i==1||i==raw||j==1||j==col){
+    	cout<<"*";
+    } 
+    else {
+    	cout<<" ";
+    }
+	}
+	cout<<"\n";
+}
+	
+	return 0;
+}
+output :*****
+        *   *
+        *   *
+        *   *
+        *****
+	
+Q5 to print reverse number:
+
+	int n;
+	cin>>n;
+	int reverse =0;
+	while(n>0){
+		int lastdigit=n%10;
+		reverse=reverse*10+lastdigit;
+		n=n/10;
+	}
+	cout<<reverse;
+
+output:
+       12
+       21	
+	       
+Q6  	       
+	
+
