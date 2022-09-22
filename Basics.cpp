@@ -126,7 +126,7 @@ int main() {
 }
 
 
-Q7 factorial:
+Q7 fibenacci series
 #include <iostream>
 using namespace std;
 
@@ -143,5 +143,30 @@ int main() {
 	}
 	return 0;
 }       
+
+
+
+problem
+
+#include <iostream>
+#include<climits>
+using namespace std;
+
+int main() {
+int n;
+cin>>n;
+int A[n];
+for(int i=0;i<n;i++){
+	cin>>A[i];
+}
+int maxno=INT_MAX;
+int minno=INT_MIN;
+for(int i=0;i<n;i++){
+	maxno=max(maxno,A[i]);
+	minno=min(minno,A[i]);
+}
+cout<<maxno<<" "<<minno;
+	return 0;
+}
 	
 
