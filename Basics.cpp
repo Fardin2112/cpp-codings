@@ -98,8 +98,50 @@ Q5 to print reverse number:
 
 output:
        12
-       21	
+       21
+
 	       
-Q6  	       
+Q6  prime number usinf FUNCTION:	       
+#include <iostream>
+#include<math.h>
+using namespace std;
+bool isprime(int num){
+	for(int i=2;i<sqrt(num);i++){
+		if(num%i==0){
+			return false;
+		}
+	}
+	return true;
+}
+
+int main() {
+	int a,b;
+	cin>>a>>b;
+	for(int i=a;i<=b;i++){
+		if(isprime(i)){
+			cout<<i<<endl;
+		}
+	}
+	return 0;	
+}
+
+
+Q7 factorial:
+#include <iostream>
+using namespace std;
+
+int main() {
+	int n,n1=0,n2=1,n3;
+	cin>>n;
+	cout<<n1<<"\n"<<n2<<endl;
+	for(int i=1;i<=n;i++){
+		n3=n1+n2;
+		n1=n2;
+		n2=n3;
+		cout<<n3<<endl;
+		
+	}
+	return 0;
+}       
 	
 
