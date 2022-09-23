@@ -201,7 +201,7 @@ int main(){
 }
 
 
-Q10 : binary search in array :
+Q10 : binary search in array ://that's code works only when you enter value in ascending order because programer did not use sorting code
 #include<iostream>
 using namespace std;
 int binary_search(int arr[],int n,int key){
@@ -235,5 +235,35 @@ int main(){
     cin>>key;
     cout<<"element "<<binary_search( arr, n, key)<<endl;
 
+    return 0;
+}
+Q11 :selection sort for sorting array:
+     #include<iostream>
+     using namespace std;
+
+
+int main(){
+int n;
+    cout<<"write no n:"<<endl;
+    cin>>n;
+    int arr[n];
+    for(int i=0;i<n;i++){
+        cout<<"write value of arr at :"<<i<<endl;
+        cin>>arr[i];
+    }
+    int temp;
+    for(int i=0;i<n;i++){
+        for(int j=i+1;j<(n-1);j++){
+            if(arr[j]<arr[i]){
+                temp=arr[j];
+                arr[j]=arr[i];
+                arr[i]=temp;
+            }
+        }
+    }
+    for(int i=0;i<n;i++){
+        cout<<arr[i]<<" ";
+    }cout<<endl;
+    
     return 0;
 }
