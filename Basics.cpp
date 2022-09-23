@@ -146,7 +146,7 @@ int main() {
 
 
 
-problem
+Q8 program to find max no & min in 1D array ;
 
 #include <iostream>
 #include<climits>
@@ -154,19 +154,19 @@ using namespace std;
 
 int main() {
 int n;
+cout<<"write n"<<endl;
 cin>>n;
 int A[n];
 for(int i=0;i<n;i++){
+    cout<<"write Array value :"<<endl;
 	cin>>A[i];
 }
-int maxno=INT_MAX;
-int minno=INT_MIN;
+int maxno=INT_MIN;
+int minno=INT_MAX;
 for(int i=0;i<n;i++){
 	maxno=max(maxno,A[i]);
 	minno=min(minno,A[i]);
 }
-cout<<maxno<<" "<<minno;
+cout<<"max no:"<<maxno<<" "<<"min no: "<<minno;
 	return 0;
 }
-	
-
